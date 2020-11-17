@@ -1,0 +1,61 @@
+.div-center {
+  width:30%;
+  min-width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.navbar {
+  font-size: 20pt;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.nav-item {
+  margin: 5pt 10pt;
+}
+
+.navbar-item {
+  font-size: 24pt;
+}
+
+h1.center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: small;
+}
+
+.card-character {
+  width: 18rem;
+}
+
+.p-status {
+  text-align: right;
+  font-weight: bold;
+  color:white
+}
+
+.status-approved {
+  color: lightgreen;
+}
+
+.status-writing {
+  color: darkgrey;
+}
+
+.card-img-character {
+  padding:30px;
+  background-color: gray;
+}
+
+.action-delete {
+  color: red;
+}
