@@ -41,5 +41,7 @@ form.addEventListener("formdata", event => {
     text: "Регистрация прошла успешно",
     icon: 'success',
     confirmButtonText: 'ОК'
+  }).then((result) => {
+    window.location = "index.html";
   });
 });
