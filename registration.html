@@ -14,31 +14,35 @@
     <div class="container div-center">
       <div class="row align-items-center">
         <div class="col">
-          <div class="form-group">
-            <h1 class="center">Регистрация</h1>
+          <form>
             <div class="form-group">
-              <label for="inputEmail">E-Mail</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Введите E-Mail">
+              <h1 class="center">Регистрация</h1>
+              <div class="form-group">
+                <label for="inputEmail">E-Mail</label>
+                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Введите E-Mail" required>
+              </div>
+              <div class="form-group">
+                <label for="inputDiscord">Discord</label>
+                <input type="text" class="form-control" id="inputDiscord" name="discord" placeholder="Введите Discord" required>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Пароль</label>
+                <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Введите пароль" required>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="inputPasswordRep" name="passwordRep" placeholder="Подтвердите пароль" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="checkAge" name="age" required>
+                <label class="form-check-label" for="checkAge">Я подтверждаю, что мне исполнилось 18 лет.</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Регистрация</button>
             </div>
-            <div class="form-group">
-              <label for="inputDiscord">Discord</label>
-              <input type="text" class="form-control" id="inputDiscord" placeholder="Введите Discord">
-            </div>
-            <div class="form-group">
-              <label for="inputPassword">Пароль</label>
-              <input type="password" class="form-control" id="inputPassword" placeholder="Введите пароль">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="inputPasswordRep" placeholder="Подтвердите пароль">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="checkAge">
-              <label class="form-check-label" for="checkAge">Я подтверждаю, что мне исполнилось 18 лет.</label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block" onclick="location.href='./index.html'">Регистрация</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
+
+    <script src="./js/site.js"></script>
   </body>
 </html>
